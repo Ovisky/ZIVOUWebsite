@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ZIVOU 知物咖啡 - 专业的咖啡体验空间" />
+    <title>ZIVOU 知物咖啡</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+      .hero {
+        height: 80vh;
+        background: url('images/hero-bg.jpg') center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      }
+
+      .photo-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+      }
+
+      .photo-grid img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 10px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .photo-grid img:hover {
+        transform: scale(1.05);
+      }
+
+      .activities {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0;
+      }
+
+      .activity-card {
+        display: flex;
+        flex-direction: column;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        padding: 2rem;
+        gap: 1rem;
+        transition: transform 0.3s ease;
+      }
+
+      .activity-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+
+      @media (min-width: 768px) {
+        .activity-card {
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .activity-card img {
+          max-width: 300px;
+          border-radius: 10px;
+        }
+      }
+
+      .social-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .social-links a {
+        color: var(--primary);
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+      }
+
+      .social-links a:hover {
+        color: var(--primary-hover);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul><li><strong>ZIVOU 知物咖啡</strong></li></ul>
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="menu.html">菜单</a></li>
+        <li><a href="contact.html" role="button">联系我们</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-content">
+          <h1>ZIVOU 知物咖啡</h1>
+          <p>品味生活，感受咖啡</p>
+        </div>
+      </section>
+
+      <section>
+        <hgroup>
+          <h2>我们的环境</h2>
+          <h3>沉浸于咖啡与空间的艺术</h3>
+        </hgroup>
+        <div class="photo-grid">
+          <img src="images/shop-1.jpg" alt="咖啡店环境图1" />
+          <img src="images/shop-2.jpg" alt="咖啡店环境图2" />
+          <img src="images/shop-3.jpg" alt="咖啡店环境图3" />
+          <img src="images/shop-4.jpg" alt="咖啡店环境图4" />
+          <img src="images/shop-5.jpg" alt="咖啡店环境图5" />
+          <img src="images/shop-6.jpg" alt="咖啡店环境图6" />
+          <img src="images/shop-7.jpg" alt="咖啡店环境图7" />
+        </div>
+      </section>
+
+      <section>
+        <hgroup>
+          <h2>近期活动</h2>
+          <h3>咖啡与生活的灵感碰撞</h3>
+        </hgroup>
+        <div class="activities">
+          <div class="activity-card">
+            <img src="images/activity-1.jpg" alt="夏季冷萃特调体验" />
+            <div>
+              <h3>夏季冷萃特调体验</h3>
+              <p>探索我们本季冷萃咖啡的独家配方，带你进入一场味觉之旅。</p>
+              <a href="#" role="button" class="outline">了解更多</a>
+            </div>
+          </div>
+          <div class="activity-card">
+            <img src="images/activity-2.jpg" alt="咖啡工作坊：手冲分享日" />
+            <div>
+              <h3>咖啡工作坊：手冲分享日</h3>
+              <p>每周五下午两点，加入我们手冲教学与品鉴，共同探索咖啡的魅力。</p>
+              <a href="#" role="button" class="outline">立即报名</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div class="grid">
+        <div>
+          <h4>联系我们</h4>
+          <p>地址：成都市武侯区龙爪堰地铁站附近</p>
+          <p>电话：<a href="tel:02888888888">(028)88888888</a></p>
+          <p>营业时间：周一至周日 9:00-21:00</p>
+        </div>
+        <div>
+          <h4>关注我们</h4>
+          <div class="social-links">
+            <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
+            <a href="#" aria-label="微博"><i class="fab fa-weibo"></i></a>
+            <a href="#" aria-label="抖音"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <small>© 2024 ZIVOU 知物咖啡 版权所有 • <a href="#">返回顶部</a></small>
+    </footer>
+  </body>
+</html>

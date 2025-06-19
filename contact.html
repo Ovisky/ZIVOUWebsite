@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ZIVOU 知物咖啡 - 联系我们" />
+    <title>联系我们 - ZIVOU 知物咖啡</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul><li><strong>ZIVOU 知物咖啡</strong></li></ul>
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="menu.html">菜单</a></li>
+        <li><a href="contact.html" role="button" aria-current="page">联系我们</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <h1>联系我们</h1>
+
+      <div class="grid">
+        <section>
+          <h2>店铺信息</h2>
+          <article>
+            <h3>地址</h3>
+            <p>成都市武侯区龙爪堰附近</p>
+            <h3>营业时间</h3>
+            <p>周一至周日 9:00-21:00</p>
+            <h3>联系方式</h3>
+            <p>电话：<a href="tel:02888888888">(028)88888888</a></p>
+            <p>邮箱：<a href="mailto:1902634965@qq.com">1902634965@qq.com</a></p>
+          </article>
+        </section>
+
+        <section>
+          <h2>在线留言</h2>
+          <form>
+            <label for="name">姓名</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">邮箱</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">电话</label>
+            <input type="tel" id="phone" name="phone" />
+
+            <label for="message">留言内容</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">发送留言</button>
+          </form>
+        </section>
+      </div>
+
+      <section>
+        <h2>位置地图</h2>
+        <div class="map-container">
+          <!-- 这里可以嵌入地图，例如使用百度地图或高德地图的API，也没有哈哈哈-->
+          <img src="images/map.jpg" alt="店铺位置地图" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div class="grid">
+        <div>
+          <h4>联系我们</h4>
+          <p>地址：成都市武侯区龙爪堰地铁站附近</p>
+          <p>电话：<a href="tel:02888888888">(028)88888888</a></p>
+          <p>营业时间：周一至周日 10:00-22:00</p>
+        </div>
+        <div>
+          <h4>关注我们</h4>
+          <div class="social-links">
+            <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
+            <a href="#" aria-label="微博"><i class="fab fa-weibo"></i></a>
+            <a href="#" aria-label="抖音"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <small>© 2025 ZIVOU 知物咖啡 版权所有 • <a href="#" class="back-to-top">返回顶部</a></small>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html> 
